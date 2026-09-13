@@ -6,40 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Portofolio - Mohammad Sholeh Huddin</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- Header Section -->
   <header>
-    <div class="container">
-      <div class="header-content">
-        <img src="images/Pasfoto.jpg" alt="Foto Mohammad Sholeh Huddin" class="profile-pic" style="border-radius: 50%; width: 150px; height: 150px;">
-        <br>
+    <div class="container header-container">
+      <img src="images/Pasfoto.jpg" alt="Mohammad Sholeh Huddin" class="profile-pic">
+      <div class="header-text">
         <h1>Mohammad Sholeh Huddin, S.Kom</h1>
-        <p>IT Support & Network Engineer | System Administrator</p>
+        <p class="tagline">IT Support & Network Engineer | System Administrator</p>
+        <div class="header-contact">
+          <span><i class="fas fa-map-marker-alt"></i> Jombang, Jawa Timur</span>
+          <span><i class="fas fa-phone"></i> 085607542241</span>
+          <span><i class="fas fa-envelope"></i> sholehhuddin841@gmail.com</span>
+          <span><i class="fas fa-globe"></i> msholehhud.my.id</span>
+        </div>
       </div>
     </div>
-    <br>
   </header>
 
   <!-- About Me Section -->
   <section id="about">
     <div class="container">
       <h2>Tentang Saya</h2>
-      <p>
-        Sarjana Teknik Informatika dengan pengalaman profesional di bidang IT Support, Network Infrastructure, dan Administrasi Sistem. Memiliki keahlian dalam pengelolaan infrastruktur jaringan multi-vendor seperti MikroTik, Ubiquiti, dan Ruijie, serta pemeliharaan hardware, server, dan sistem CCTV enterprise. Berpengalaman mengembangkan aplikasi efisiensi internal berbasis Python (Flask) dan PHP untuk kebutuhan Asset Management, IT Helpdesk, Monitoring System, dan operasional perusahaan. Terbiasa menangani operasional harian IT, berkoordinasi dengan vendor eksternal, dan menjaga ketersediaan sistem.
-      </p>
-      <div class="personal-info">
-        <h3>Biodata & Kontak</h3>
-        <ul>
-          <li><strong>Nama:</strong> Mohammad Sholeh Huddin</li>
-          <li><strong>Lokasi:</strong> Jombang, Jawa Timur</li>
-          <li><strong>Email:</strong> sholehhuddin841@gmail.com</li>
-          <li><strong>Website:</strong> msholehhud.my.id</li>
-          <li><strong>Telepon:</strong> 085607542241</li>
-        </ul>
+      <div class="card">
+        <p>
+          Sarjana Teknik Informatika dengan pengalaman profesional di bidang IT Support, Network Infrastructure, dan Administrasi Sistem. Memiliki keahlian dalam pengelolaan infrastruktur jaringan multi-vendor seperti MikroTik, Ubiquiti, dan Ruijie, serta pemeliharaan hardware, server, dan sistem CCTV enterprise. Berpengalaman mengembangkan aplikasi efisiensi internal berbasis Python (Flask) dan PHP untuk kebutuhan Asset Management, IT Helpdesk, Monitoring System, dan operasional perusahaan. Terbiasa menangani operasional harian IT, berkoordinasi dengan vendor eksternal, dan menjaga ketersediaan sistem.
+        </p>
       </div>
     </div>
   </section>
@@ -48,57 +44,78 @@
   <section id="work">
     <div class="container">
       <h2>Pengalaman Kerja</h2>
-      
-      <div class="job-item">
-        <h3>Staff IT Network and Support</h3>
-        <p><strong>PT Kayu Mebel Indonesia</strong> | April 2026 - Sekarang (Kontrak)</p>
-        <ul>
-          <li>Mengelola server Windows Server (Active Directory/Domain Controller) & Ubuntu Server, serta file sharing lokal.</li>
-          <li>Pemantauan kesehatan server SAP S/4HANA, backup database, alokasi memori, dan recovery instance.</li>
-          <li>Migrasi unmanaged switch dan Access Point ke ekosistem Ubiquiti dan Ruijie untuk manajemen terpusat.</li>
-          <li>Mengonfigurasi perangkat multi-vendor (MikroTik, Ruijie, Ubiquiti, Totolink, TP-Link).</li>
-          <li>Mengembangkan aplikasi IT Asset Management, IT Helpdesk/Ticketing, Infra Mapping, dan IoT Web Dashboard berbasis Python (Flask).</li>
-          <li>Maintenance hardware/software PC karyawan, backup system, dan ketersediaan CCTV (Vivotek & Hikvision).</li>
-        </ul>
-      </div>
+      <div class="timeline">
 
-      <div class="job-item">
-        <h3>IT Support & Network Engineer (Freelance)</h3>
-        <p><strong>CV Twindo Furniture</strong> | Juli 2026</p>
-        <ul>
-          <li>Instalasi dan konfigurasi Active Directory/Domain Controller serta folder sharing terpusat.</li>
-          <li>Konfigurasi router MikroTik (IP addressing, routing, bandwidth management) untuk stabilitas jaringan.</li>
-        </ul>
-      </div>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Staff IT Network and Support</h3>
+            <span class="badge">Kontrak</span>
+          </div>
+          <p class="company">PT Kayu Mebel Indonesia | <span>April 2026 - Sekarang</span></p>
+          <ul>
+            <li>Mengelola dan memelihara server berbasis Windows Server dan Ubuntu Server, termasuk konfigurasi Local Domain (Active Directory/Domain Controller) serta akses file sharing lokal antar-divisi.</li>
+            <li>Mengelola pemantauan kesehatan server SAP S/4HANA, pelaksanaan backup database, alokasi memori, dan tindakan recovery (stop/start instance) jika terjadi kendala pada layanan.</li>
+            <li>Merancang dan meng-upgrade infrastruktur jaringan perusahaan dengan memigrasikan unmanaged switch (HP, TP-Link, D-Link) serta Access Point ke ekosistem Ubiquiti dan Ruijie untuk efisiensi dan manajemen terpusat.</li>
+            <li>Mengonfigurasi dan mengelola perangkat jaringan multi-vendor meliputi MikroTik RouterOS, Ruijie, Ubiquiti, Totolink, dan TP-Link untuk memastikan konektivitas antar-plans stabil.</li>
+            <li>Membangun aplikasi IT Asset Management, IT Helpdesk/Ticketing, Infra Mapping, serta web dashboard monitoring sensor (temperature, pH, conductivity) berbasis Python (Flask) untuk penarikan data terpusat dan efisiensi pemantauan.</li>
+            <li>Melakukan perawatan, upgrade hardware/software, perbaikan laptop/PC karyawan, serta menjalankan prosedur rutin backup system dan data pada mesin produksi.</li>
+            <li>Mengonfigurasi, melakukan pemeliharaan, serta memastikan ketersediaan sistem pengawasan CCTV (Vivotek dan Hikvision) di area operasional dan pabrik.</li>
+          </ul>
+        </div>
 
-      <div class="job-item">
-        <h3>Staff IT Support</h3>
-        <p><strong>PT RESKA MULTI USAHA (KAI Services) - KAI LRT Jabodebek</strong> | November 2024 - Desember 2025</p>
-        <ul>
-          <li>Memastikan stabilitas infrastruktur jaringan & perangkat IT stasiun dan kantor operasional.</li>
-          <li>Mengelola dan mengonfigurasi CCTV multi-brand (Honeywell, Hikvision, Bosch).</li>
-          <li>Deployment, inventarisasi, dan troubleshooting PC, laptop, printer, serta perangkat pendukung IT.</li>
-          <li>Koordinasi vendor untuk pemeliharaan PC POS loket, passenger gate, dan PIDS.</li>
-        </ul>
-      </div>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>IT Support & Network Engineer</h3>
+            <span class="badge badge-secondary">Freelance / Panggilan</span>
+          </div>
+          <p class="company">CV Twindo Furniture | <span>Juli 2026</span></p>
+          <ul>
+            <li>Melakukan instalasi dan konfigurasi dasar Active Directory/Domain Controller serta mengelola sharing folder terpusat untuk keamanan dan kemudahan pertukaran data antar-karyawan.</li>
+            <li>Mengonfigurasi router MikroTik, termasuk IP addressing, routing, dan bandwidth management, agar seluruh perangkat terhubung dalam satu jaringan yang stabil.</li>
+            <li>Memastikan interkoneksi dan komunikasi antar-perangkat jaringan berjalan lancar tanpa kendala operasional.</li>
+          </ul>
+        </div>
 
-      <div class="job-item">
-        <h3>IT Support & Web Developer (Magang)</h3>
-        <p><strong>PT KAI DAOP 7 MADIUN (Unit Sistem Informasi)</strong> | Agustus - Desember 2023</p>
-        <ul>
-          <li>Merancang Aplikasi Antrean Digital Klinik Mediska (dasar topik Skripsi S1).</li>
-          <li>Mengembangkan aplikasi web "Train Check" (PHP & MySQL) untuk inspeksi CCTV kereta.</li>
-          <li>Proyek migrasi jaringan, penarikan kabel UTP & Fiber Optic (splicing/crimping), dan pemasangan CCTV baru.</li>
-        </ul>
-      </div>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Staff IT Support</h3>
+            <span class="badge badge-info">Full-time</span>
+          </div>
+          <p class="company">PT RESKA MULTI USAHA (KAI Services) - KAI LRT Jabodebek | <span>November 2024 - Desember 2025</span></p>
+          <ul>
+            <li>Memastikan stabilitas dan kesiapan infrastruktur jaringan serta perangkat IT di area kantor dan stasiun sebelum jam operasional harian dimulai.</li>
+            <li>Mengelola dan mengonfigurasi sistem pengawasan CCTV multi-brand (Honeywell, Hikvision, Bosch) di area stasiun dan operasional LRT.</li>
+            <li>Melakukan deployment, konfigurasi, inventarisasi, dan troubleshooting untuk PC, laptop, printer, CCTV, serta perangkat pendukung IT lainnya.</li>
+            <li>Berkoordinasi aktif dengan vendor terkait perbaikan dan pemeliharaan perangkat pihak ketiga, seperti PC POS loket, passenger gate, dan Passenger Information Display System (PIDS) di stasiun maupun dalam kereta.</li>
+          </ul>
+        </div>
 
-      <div class="job-item">
-        <h3>Web Developer (Kerja Praktek)</h3>
-        <p><strong>PT Apikin SDM Indonesia (AKSINESIA)</strong> | Januari - Februari 2023</p>
-        <ul>
-          <li>Merancang aplikasi web penjualan beras sorgum berbasis PHP & MySQL.</li>
-          <li>Melakukan analisis kebutuhan pengguna, functional testing, dan debugging.</li>
-        </ul>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>IT Support & Web Developer</h3>
+            <span class="badge badge-info">Magang</span>
+          </div>
+          <p class="company">PT KAI DAOP 7 MADIUN (Unit Sistem Informasi) | <span>Agustus - Desember 2023</span></p>
+          <ul>
+            <li>Merancang dan membangun Aplikasi Antrean Digital Klinik Mediska untuk meningkatkan efisiensi pelayanan pasien, yang kemudian dikembangkan lebih lanjut secara independen sebagai topik Skripsi Tugas Akhir S1.</li>
+            <li>Mengembangkan aplikasi web "Train Check" berbasis PHP dan MySQL untuk efisiensi pemantauan, pendataan, dan inspeksi kondisi CCTV di dalam kereta.</li>
+            <li>Berpartisipasi aktif dalam proyek migrasi jaringan, penarikan kabel UTP dan Fiber Optic (FO), proses splicing serta crimping, dan memastikan konektivitas berjalan normal pasca-pemindahan.</li>
+            <li>Mendukung perluasan sistem keamanan dengan melakukan pemasangan dan penyetelan titik CCTV baru di beberapa stasiun dan klinik Mediska area DAOP 7 Madiun.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Web Developer</h3>
+            <span class="badge badge-info">Kerja Praktek</span>
+          </div>
+          <p class="company">PT Apikin SDM Indonesia (AKSINESIA) | <span>Januari - Februari 2023</span></p>
+          <ul>
+            <li>Pengembangan Aplikasi Penjualan: Merancang dan membangun aplikasi web penjualan beras sorgum menggunakan PHP & MySQL untuk mendukung operasional bisnis internal perusahaan.</li>
+            <li>Pengujian Sistem: Melakukan analisis kebutuhan dasar pengguna serta pengujian fungsi (functional testing) dan debugging sebelum aplikasi diimplementasikan.</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
@@ -106,23 +123,32 @@
   <!-- Skills Section -->
   <section id="skills">
     <div class="container">
-      <h2>Keahlian & Skill</h2>
-      <div class="skills-container">
-        <div class="skill-category">
+      <h2>Keahlian & Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
           <h3>Networking & Infra</h3>
-          <p>MikroTik RouterOS, Ubiquiti UniFi, Ruijie, VLAN, DHCP, Firewall, Routing & Switching, Fiber Optic (Splicing/Crimping), UTP Cabling</p>
+          <p>MikroTik RouterOS, Ubiquiti UniFi, Ruijie, VLAN, DHCP, Firewall, Routing & Switching, Fiber Optic (Splicing/Crimping), UTP Cabling.</p>
         </div>
-        <div class="skill-category">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
           <h3>Server & System Admin</h3>
-          <p>Windows Server (Active Directory/Domain Controller), Ubuntu Server, File Sharing (SMB/Samba), System & Data Backup</p>
+          <p>Windows Server (Active Directory/Domain Controller), Ubuntu Server, File Sharing (SMB/Samba), System & Data Backup.</p>
         </div>
-        <div class="skill-category">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-tools"></i></div>
           <h3>IT Support & Hardware</h3>
-          <p>Hardware Troubleshooting (PC/Laptop/Printer), Windows Administration, CCTV (Hikvision, Vivotek, Honeywell, Bosch)</p>
+          <p>Hardware Troubleshooting (PC/Laptop/Printer), Windows Administration, CCTV (Hikvision, Vivotek, Honeywell, Bosch).</p>
         </div>
-        <div class="skill-category">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
           <h3>Web & Programming</h3>
-          <p>Python (Flask), PHP, MySQL, SQLite, HTML/CSS</p>
+          <p>Python (Flask), PHP, MySQL, SQLite, HTML/CSS.</p>
+        </div>
+        <div class="skill-card wide">
+          <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Tools & Soft Skills</h3>
+          <p>VS Code, XAMPP, MS Office, IT Helpdesk/Asset Management, Technical Documentation, Problem Solving, Vendor Coordination.</p>
         </div>
       </div>
     </div>
@@ -132,19 +158,25 @@
   <section id="education">
     <div class="container">
       <h2>Pendidikan & Pelatihan</h2>
-      
-      <h3>Pendidikan Formal</h3>
-      <ul>
-        <li><strong>2020 - 2024</strong> | Universitas Trunojoyo Madura - S1 Teknik Informatika (IPK 3.50)</li>
-      </ul>
-
-      <h3>Pendidikan Non-Formal / Pelatihan</h3>
-      <ul>
-        <li><strong>Agustus 2026</strong> | Basic Networking - Kursus Jaringan</li>
-        <li><strong>10 Jan - 10 Feb 2026</strong> | English Basic Class - English Madany Course</li>
-        <li><strong>18 September 2025</strong> | Strategy Handling Hard Complaint - LRT Jabodebek</li>
-        <li><strong>08 - 09 Juli 2025</strong> | Pelatihan IT Support - Qelopak Teknologi Indonesia</li>
-      </ul>
+      <div class="grid-2">
+        <div class="card">
+          <h3><i class="fas fa-graduation-cap"></i> Pendidikan Formal</h3>
+          <div class="edu-item">
+            <h4>Universitas Trunojoyo Madura</h4>
+            <p class="sub">S1 Teknik Informatika | 2020 - 2024</p>
+            <p class="highlight">IPK: 3.50</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-certificate"></i> Pelatihan & Sertifikasi</h3>
+          <ul class="cert-list">
+            <li><strong>Agustus 2026:</strong> Basic Networking - Kursus Jaringan</li>
+            <li><strong>10 Jan - 10 Feb 2026:</strong> English Basic Class - English Madany Course</li>
+            <li><strong>18 September 2025:</strong> Strategy Handling Hard Complaint - LRT Jabodebek</li>
+            <li><strong>08 - 09 Juli 2025:</strong> Pelatihan IT Support - Qelopak Teknologi Indonesia</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -152,29 +184,64 @@
   <section id="organization">
     <div class="container">
       <h2>Pengalaman Organisasi</h2>
-      <ul>
-        <li><strong>2022 - 2023</strong> | Wakil Komandan | UKM Resimen Mahasiswa Universitas Trunojoyo Madura</li>
-        <li><strong>2021 - 2022</strong> | Sekretaris Jenderal | Ikatan Mahasiswa Bidikmisi Universitas Trunojoyo Madura</li>
-        <li><strong>2020 - 2021</strong> | Ketua Umum | Forum Alumni SMA Negeri Kesamben</li>
-      </ul>
+      <div class="card">
+        <ul class="org-list">
+          <li>
+            <span class="year">2022 - 2023</span>
+            <span class="role">Wakil Komandan</span>
+            <span class="org">UKM Resimen Mahasiswa Universitas Trunojoyo Madura</span>
+          </li>
+          <li>
+            <span class="year">2021 - 2022</span>
+            <span class="role">Sekretaris Jenderal</span>
+            <span class="org">Ikatan Mahasiswa Bidikmisi Universitas Trunojoyo Madura</span>
+          </li>
+          <li>
+            <span class="year">2020 - 2021</span>
+            <span class="role">Ketua Umum</span>
+            <span class="org">Forum Alumni SMA Negeri Kesamben</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentation Section -->
+  <section id="documentation">
+    <div class="container">
+      <h2>Dokumentasi Kegiatan</h2>
+      <div class="slider">
+        <div class="slide active">
+          <img src="images/magang1.jpg" alt="Dokumentasi Kerja/Magang" class="image-size">
+          <p>Kegiatan Operasional & Support IT</p>
+        </div>
+        <div class="slide">
+          <img src="images/organisasi1.jpg" alt="Dokumentasi Organisasi" class="image-size">
+          <p>Mengisi Materi Administrasi dan Organisasi</p>
+        </div>
+        <div class="slide">
+          <img src="images/organisasi3.jpg" alt="Dokumentasi Provos" class="image-size">
+          <p>Mengisi Materi Dasar-Dasar Provos</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Feedback Form Section -->
   <section id="feedback">
     <div class="container">
-      <h2>Kirim Masukan</h2>
+      <h2>Hubungi Saya</h2>
       <form action="mailto:sholehhuddin841@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="nama@email.com">
 
-        <label for="message">Pesan:</label>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <label for="message">Pesan / Masukan</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Tuliskan pesan Anda..."></textarea>
 
-        <input type="submit" value="Kirim">
+        <input type="submit" value="Kirim Pesan">
       </form>
     </div>
   </section>
@@ -182,7 +249,7 @@
   <!-- Footer Section -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 Mohammad Sholeh Huddin. All rights reserved.</p>
+      <p>&copy; 2026 Mohammad Sholeh Huddin, S.Kom. All Rights Reserved.</p>
     </div>
   </footer>
 
